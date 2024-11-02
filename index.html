@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainings-App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Willkommensbereich -->
+    <section class="welcome-section">
+        <img src="welcome-image.jpg" alt="Workout" class="welcome-image">
+        <h1>What's Your Workout Goal?</h1>
+        <input type="text" placeholder="Goal (e.g., Strength)">
+        <button class="start-button">Start Workout</button>
+    </section>
+
+    <!-- Trainingsübersicht -->
+    <section class="workout-overview">
+        <h2>Today's Workout</h2>
+        <div class="workout-card">
+            <img src="workout1.jpg" alt="Squats">
+            <p>Squats - 15 reps</p>
+        </div>
+        <div class="workout-card">
+            <img src="workout2.jpg" alt="Push-Ups">
+            <p>Push-Ups - 10 reps</p>
+        </div>
+        <div class="workout-card">
+            <img src="workout3.jpg" alt="Lunges">
+            <p>Lunges - 12 reps</p>
+        </div>
+    </section>
+
+    <!-- Fortschritt/Statistik -->
+    <section class="activity-stats">
+        <h2>Activity Stats</h2>
+        <div class="progress-circle">
+            <p>70% Complete</p>
+        </div>
+        <div class="daily-goals">
+            <p>Today's Goal: 20 mins</p>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
