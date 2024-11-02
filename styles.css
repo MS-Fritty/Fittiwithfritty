@@ -16,7 +16,7 @@ h1, h2, h3 {
     color: #333;
 }
 
-.weekly-plan, .progress-calendar {
+.weekly-plan, .monthly-progress-calendar {
     padding: 20px;
 }
 
@@ -46,22 +46,38 @@ h1, h2, h3 {
     margin-right: 10px;
 }
 
-.progress-calendar {
+.monthly-progress-calendar {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-top: 20px;
 }
 
-.calendar-grid {
+.days-grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(7, 1fr); /* Zeigt 7 Tage pro Woche an */
+    gap: 5px;
+    margin-bottom: 20px;
 }
 
-.day {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.days-grid input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #4a90e2;
+}
+
+#reset-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-button:hover {
+    background-color: #ff3333;
 }
